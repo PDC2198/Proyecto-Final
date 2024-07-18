@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": "1",
+      "producto": "Visualización de datos",
+      "precio": 200,
+      "cantidad": 1
+    },
+    {
+      "id": "2",
+      "producto": "Gestión de datos",
+      "precio": 250,
+      "cantidad": 1
+    },
+    {
+      "id": "3",
+      "producto": "Análisis de datos",
+      "precio": 300,
+      "cantidad": 1
+    }
+  ]
+}

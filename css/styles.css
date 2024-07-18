@@ -1,0 +1,551 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1c1c1c;
+    color: #f1f1f1;
+}
+
+
+header {
+    background-color: #222;
+    padding: 10px 20px;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-right: 2px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #15e69c;
+}
+
+.btn-login,
+.btn-register {
+    background-color: #4c2d99;
+    color: #fff;
+    padding: 8px 5px;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-login:hover,
+.btn-register:hover {
+    background-color: #893d3d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    width: 45px;
+    /* Ajusta el tamaño según sea necesario */
+    height: auto;
+    /* Mantiene la proporción */
+    margin-right: 15px;
+    /* Espacio entre la imagen y el texto */
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    color: #f1f1f1;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1f1f1;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    color: #2262a1;
+}
+
+
+#hero {
+    height: 100vh;
+    background-image: url('../imagenes/anlizando-datos-empresariales.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f1f1f1;
+    padding-top: 60px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.hero-content h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.hero-content p {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.hero-content .btn {
+    background-color: #1e90ff;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.hero-content .btn:hover {
+    background-color: #0056b3;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 80px auto;
+    padding: 0 20px;
+}
+
+
+#services {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.service-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.service {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+.service i {
+    font-size: 48px;
+    color: #1e90ff;
+    margin-bottom: 10px;
+}
+
+.service h3 {
+    margin: 10px 0;
+}
+
+.service p {
+    font-size: 16px;
+}
+
+/* Estilos específicos para la tabla en la página de Servicios */
+table.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 15px;
+    box-shadow: 0 4px 8px rgba(175, 20, 20, 0.1);
+}
+
+table.styled-table th,
+table.styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table.styled-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    color: #333;
+}
+
+table.styled-table tbody tr:hover {
+    background-color: #325087;
+}
+
+
+#about {
+    margin: 40px 0;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 3px;
+    margin-right: 1px;
+}
+
+.about-image img {
+    width: 75%;
+    border-radius: 25px;
+    
+}
+
+.about-text {
+    flex: 2;
+    min-width: 300px;
+    text-align: justify;
+}
+
+
+#contact {
+    margin: 40px 0;
+}
+
+/* Estilos generales para formularios */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px; /* Espacio superior para separar del encabezado */
+}
+
+.form-group {
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #ffffff; /* Color del texto de las etiquetas */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: #f1f1f1;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+}
+
+form .btn {
+    background-color: #3c6b6e;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 100%; /* Botón con ancho completo */
+    max-width: 150px; /* Ancho máximo para el botón */
+    text-align: center; /* Alinear texto al centro */
+}
+
+form .btn:hover {
+    background-color: #68a12f;
+}
+
+
+footer {
+    background-color: #333;
+    color: #f1f1f1;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.social-media {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    color: #f1f1f1;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-media a:hover {
+    color: #1e90ff;
+}
+
+.image-container {
+    display: flex; /* Utiliza flexbox para alinear las imágenes */
+    flex-wrap: wrap; /* Permite que las imágenes se envuelvan en múltiples líneas */
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin: 20px; /* Margen exterior */
+}
+
+/* Estilos para cada imagen */
+.image-container div {
+    flex: 0 0 calc(50% - 50px); /* Establece el ancho de cada imagen */
+    margin: 10px; /* Margen entre imágenes */
+    height: 400px; /* Altura deseada */
+    overflow: hidden; /* Oculta el desbordamiento de las imágenes */
+}
+
+.image-container img {
+    width: 100%; /* Hace que la imagen llene su contenedor */
+    height: 100%; /* Hace que la imagen llene su contenedor */
+    object-fit: cover; /* Ajusta la imagen dentro de su contenedor manteniendo la relación de aspecto */
+    display: block; /* Evita espacios adicionales */
+    border: 2px solid #ccc; /* Borde */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Sombra */
+}
+
+.ver-mas-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #455363;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.ver-mas-btn:hover {
+    background-color: #994d6e;
+}
+
+/* Boton Contratar*/
+.contratar-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #28a745;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.contratar-btn:hover {
+    background-color: #387645;
+}
+
+/*Diseño para las interpaginas*/
+#gestion-bases-datos, #analisis-datos, #visualizacion-datos {
+    padding: 20px;
+    background-color: #454d57;
+    text-align: left;
+}
+
+#gestion-bases-datos h2, #analisis-datos h2, #visualizacion-datos h2 {
+    text-align: center;
+    color: #fff;
+}
+
+#gestion-bases-datos .content, #analisis-datos .content, #visualizacion-datos .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+#gestion-bases-datos .content .text, #analisis-datos .content .text, #visualizacion-datos .content .text {
+    flex: 1;
+    margin-right: 20px;
+}
+
+#gestion-bases-datos .content .image, #analisis-datos .content .image, #visualizacion-datos .content .image {
+    flex: 1;
+    max-width: 400px;
+}
+
+#gestion-bases-datos .content .image img, #analisis-datos .content .image img, #visualizacion-datos .content .image img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos generales */
+.product-container {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+}
+
+.product-container img {
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+    border: 6px solid #64b914; /* Cambia el color y grosor según tus necesidades */
+    border-radius: 30px; /* Opcional: agrega bordes redondeados */
+}
+
+.product-container button {
+    display: block;
+    margin: 10px auto 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Estilos responsivos */
+@media (min-width: 768px) { /*Para tablets*/
+    .product-container {
+        width: 45%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 1024px) { /*Para compus*/
+    .product-container {
+        width: 30%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 767px) { /*Para celculares*/
+    .product-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.analisis-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #661c1c;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.analisis-btn:hover {
+    background-color: #386276;
+}
+
+.gestion-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #661c1c;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.gestion-btn:hover {
+    background-color: #386276;
+}
+
+.visualizacion-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #661c1c;
+    border: none;
+    border-radius: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+.visualizacion-btn:hover {
+    background-color: #386276;
+}
+
+.contratar-btn{
+    display: inline-block;
+    padding: 8px 15px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #1c2a66;
+    border: none;
+    border-radius: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2px;
+}
+
+.contratar-btn:hover{
+    background-color: #6eab30;
+}
